@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:layout_width="@dimen/avator_size"
+        android:layout_height="@dimen/avator_size"
+        android:scaleType="centerCrop"
+        android:id="@+id/list_avatar"
+        tools:src="@drawable/a_avator"/>
+
+    <TextView
+        android:id="@+id/list_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_toRightOf="@+id/list_avatar"
+        tools:text="@string/item_title"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/article_titles"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_desc"
+        android:layout_below="@+id/list_title"
+        android:layout_toRightOf="@+id/list_avatar"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:textColor="@color/medium_grey"
+        android:ellipsize="end"
+        android:singleLine="true"
+        tools:text="@string/item_desc"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/list_body"/>
+</RelativeLayout>
